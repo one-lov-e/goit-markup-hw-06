@@ -222,6 +222,11 @@ ul {
   transition-timing-function: var(--transition-effect);
 }
 
+.section-subject .bth:focus,
+.section-subject .bth:hover {
+  background-color: #188ce8;
+}
+
 /*section-title*/
 
 .about-thumb {
@@ -490,6 +495,11 @@ img {
 
 /*footer-form*/
 
+.form-submit {
+  display: flex;
+  gap: 12px;
+}
+
 .subscride-text {
   font-family: "Roboto";
   font-style: normal;
@@ -518,38 +528,44 @@ img {
   padding-bottom: 15px;
 }
 
-.form-button {
-  width: 200px;
-  height: 50px;
-  left: 1185px;
-  top: 2784px;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-self: center;
-  cursor: pointer;
+.foot-email:focus,
+.foot-email:focus {
+  outline: #2196f3 solid 1px;
 }
 
 .form-bth {
+  align-self: flex-end;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
-  background-color: var(--logo-text-color);
-  border: none;
-  cursor: pointer;
+  color: var(--caption-text-color);
+  background: var(--logo-text-color);
+}
 
-  padding-left: 28px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.form-bth:focus,
+.form-bth:hover {
+  background-color: #188ce8;
+}
+
+.form-icon {
+  fill: var(--caption-text-color);
+  align-items: center;
 }
 
 /*adress footer*/
@@ -1011,6 +1027,11 @@ img {
   margin-bottom: 20px;
 }
 
+.modal-gabarit:focus,
+.modal-gabarit:focus {
+  outline: #2196f3 solid 1px;
+}
+
 .mondal-buttons {
   width: 200px;
   height: 50px;
@@ -1046,6 +1067,11 @@ img {
   padding-right: 52px;
 }
 
+.bth-mondal:focus,
+.bth-mondal:hover {
+  background-color: #188ce8;
+}
+
 .check-text {
   font-family: "Roboto";
   font-style: normal;
@@ -1067,7 +1093,7 @@ img {
 .check-icon {
   width: 16px;
   height: 15px;
-  border: 1px solid rgba(33, 33, 33, 1);
+  border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 2px;
   display: flex;
   align-items: center;
