@@ -207,6 +207,7 @@ ul {
   width: 216px;
   height: 50px;
   cursor: pointer;
+  border: var(--logo-text-color);
 
   color: var(--caption-text-color);
   background-color: var(--logo-text-color);
@@ -485,6 +486,70 @@ img {
 
 .customers-icon {
   fill: #afb1b8;
+}
+
+/*footer-form*/
+
+.subscride-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--caption-text-color);
+  margin-bottom: 20px;
+}
+
+.foot-email {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2784px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-button {
+  width: 200px;
+  height: 50px;
+  left: 1185px;
+  top: 2784px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.form-bth {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--logo-text-color);
+  border: none;
+  cursor: pointer;
+
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*adress footer*/
@@ -830,6 +895,11 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .data-modal-close {
@@ -867,4 +937,166 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+/*modal-title*/
+
+.modal-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  margin-top: 4px;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: var(--logo-text-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--logo-text-color);
+}
+
+.label-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  display: block;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-gabarit {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  margin-bottom: 20px;
+}
+
+.mondal-buttons {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 712px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: auto;
+}
+
+.bth-mondal {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: auto;
+
+  color: var(--caption-text-color);
+  background-color: var(--logo-text-color);
+  border: var(--logo-text-color);
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.check-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.check-text a {
+  color: var(--logo-text-color);
+}
+
+.check-icon {
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--logo-text-color);
+  border-radius: 2px;
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: var(--caption-text-color);
+  border: none;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  bottom: 14px;
+  top: 14px;
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
